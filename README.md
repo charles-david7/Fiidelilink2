@@ -1,49 +1,38 @@
-# FidéliLink — Plateforme SaaS de Fidélisation Mutualisée
+# FidéliLink — Dossier de rendu
 
-## Stack
-- **Backend** : NestJS + TypeORM + PostgreSQL + Redis
-- **Frontend** : React + TypeScript + Vite + Material UI
-- **Auth** : JWT (access 15min + refresh 7j)
-- **Deploy** : Backend → Railway / Render | Frontend → Vercel
+## URL publique
+- Frontend : (a completer apres deploiement Vercel)
+- API : (a completer apres deploiement Railway)
 
-## Démarrage rapide
+## URL depot Git
+https://github.com/TON_USERNAME/fidelilink2
 
-### Backend
-```bash
-cd backend
-npm install
-cp .env.example .env
-# Remplir les variables dans .env
-npm run start:dev
-```
+## Identifiants de test
+| Role       | Email                 | Mot de passe  |
+|------------|-----------------------|---------------|
+| Admin      | admin@fidelilink.fr   | Admin2025!    |
+| Commercant | martin@boulangerie.fr | Merchant2025! |
+| Client     | sophie@test.fr        | Client2025!   |
 
-### Frontend
-```bash
-cd frontend
-npm install
-cp .env.example .env.local
-npm run dev
-```
+## Acces admin backoffice
+URL : /app/admin
+Email : admin@fidelilink.fr
+Mot de passe : Admin2025!
 
-### Seed (données de test)
-```bash
-cd backend
-npm run seed
-```
+## Base de donnees
+Host : localhost | Port : 5432 | DB : fidelilink | User : charles
 
-## Comptes de test
-- Admin : `admin@fidelilink.fr` / `Admin2025!`
-- Commerçant : `martin@boulangerie.fr` / `Merchant2025!`
-- Client : `sophie@test.fr` / `Client2025!`
+## Prerequis
+Node.js >= 18, PostgreSQL >= 16, npm
 
-## Déploiement
+## Installation backend
+cd backend && npm install && cp .env.example .env && npm run start:dev
 
-### Frontend (Vercel)
-1. Importer le repo sur Vercel
-2. Root directory : `frontend`
-3. Variables d'env : `VITE_API_URL=https://votre-api.railway.app/api`
+## Installation frontend
+cd frontend && npm install && cp .env.example .env.local && npm run dev
 
-### Backend (Railway)
-1. Nouveau projet Railway depuis le repo
-2. Root directory : `backend`
-3. Variables d'env : voir `.env.example`
+## Seed donnees de test
+cd backend && npm run seed
+
+## Navigateurs testes
+Chrome, Safari, Firefox
