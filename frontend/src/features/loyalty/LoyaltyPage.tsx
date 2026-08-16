@@ -69,7 +69,7 @@ export default function LoyaltyPage() {
                     <Typography fontWeight={600}>{b.merchant?.name}</Typography>
                     <Typography color="text.secondary" fontSize={13}>{b.merchant?.category}</Typography>
                   </Box>
-                  <Chip label={`${b.balance} PE`} color="primary" fontWeight={700} />
+                  <Chip label={`${b.balance} PE`} color="primary" />
                 </Box>
                 <Box sx={{ height: 6, bgcolor: '#e5e7eb', borderRadius: 3, mb: 1.5, overflow: 'hidden' }}>
                   <Box sx={{ height: '100%', width: `${Math.min(100, (b.balance / 100) * 100)}%`, bgcolor: '#639922', borderRadius: 3 }} />
